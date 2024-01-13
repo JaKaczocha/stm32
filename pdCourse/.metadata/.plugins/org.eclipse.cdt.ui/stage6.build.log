@@ -1,0 +1,10 @@
+22:37:07 **** Incremental Build of configuration Debug for project stage6 ****
+make -j4 all 
+arm-none-eabi-size  stage6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14024	     20	   1780	  15824	   3dd0	stage6.elf
+Finished building: default.size.stdout
+ 
+
+22:37:07 Build Finished. 0 errors, 0 warnings. (took 376ms)
+
