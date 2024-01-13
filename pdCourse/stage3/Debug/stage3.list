@@ -691,44 +691,45 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pin = B1_Pin;
  800069e:	f44f 5300 	mov.w	r3, #8192	; 0x2000
  80006a2:	617b      	str	r3, [r7, #20]
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
- 80006a4:	f44f 1304 	mov.w	r3, #2162688	; 0x210000
- 80006a8:	61bb      	str	r3, [r7, #24]
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+ 80006a4:	2300      	movs	r3, #0
+ 80006a6:	61bb      	str	r3, [r7, #24]
   GPIO_InitStruct.Pull = GPIO_NOPULL;
- 80006aa:	2300      	movs	r3, #0
- 80006ac:	61fb      	str	r3, [r7, #28]
+ 80006a8:	2300      	movs	r3, #0
+ 80006aa:	61fb      	str	r3, [r7, #28]
   HAL_GPIO_Init(B1_GPIO_Port, &GPIO_InitStruct);
- 80006ae:	f107 0314 	add.w	r3, r7, #20
- 80006b2:	4619      	mov	r1, r3
- 80006b4:	480b      	ldr	r0, [pc, #44]	; (80006e4 <MX_GPIO_Init+0xc8>)
- 80006b6:	f000 fa65 	bl	8000b84 <HAL_GPIO_Init>
+ 80006ac:	f107 0314 	add.w	r3, r7, #20
+ 80006b0:	4619      	mov	r1, r3
+ 80006b2:	480c      	ldr	r0, [pc, #48]	; (80006e4 <MX_GPIO_Init+0xc8>)
+ 80006b4:	f000 fa66 	bl	8000b84 <HAL_GPIO_Init>
 
   /*Configure GPIO pin : LD2_Pin */
   GPIO_InitStruct.Pin = LD2_Pin;
- 80006ba:	2320      	movs	r3, #32
- 80006bc:	617b      	str	r3, [r7, #20]
+ 80006b8:	2320      	movs	r3, #32
+ 80006ba:	617b      	str	r3, [r7, #20]
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
- 80006be:	2301      	movs	r3, #1
- 80006c0:	61bb      	str	r3, [r7, #24]
+ 80006bc:	2301      	movs	r3, #1
+ 80006be:	61bb      	str	r3, [r7, #24]
   GPIO_InitStruct.Pull = GPIO_NOPULL;
- 80006c2:	2300      	movs	r3, #0
- 80006c4:	61fb      	str	r3, [r7, #28]
+ 80006c0:	2300      	movs	r3, #0
+ 80006c2:	61fb      	str	r3, [r7, #28]
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
- 80006c6:	2300      	movs	r3, #0
- 80006c8:	623b      	str	r3, [r7, #32]
+ 80006c4:	2300      	movs	r3, #0
+ 80006c6:	623b      	str	r3, [r7, #32]
   HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
- 80006ca:	f107 0314 	add.w	r3, r7, #20
- 80006ce:	4619      	mov	r1, r3
- 80006d0:	f04f 4090 	mov.w	r0, #1207959552	; 0x48000000
- 80006d4:	f000 fa56 	bl	8000b84 <HAL_GPIO_Init>
+ 80006c8:	f107 0314 	add.w	r3, r7, #20
+ 80006cc:	4619      	mov	r1, r3
+ 80006ce:	f04f 4090 	mov.w	r0, #1207959552	; 0x48000000
+ 80006d2:	f000 fa57 	bl	8000b84 <HAL_GPIO_Init>
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */
 }
- 80006d8:	bf00      	nop
- 80006da:	3728      	adds	r7, #40	; 0x28
- 80006dc:	46bd      	mov	sp, r7
- 80006de:	bd80      	pop	{r7, pc}
+ 80006d6:	bf00      	nop
+ 80006d8:	3728      	adds	r7, #40	; 0x28
+ 80006da:	46bd      	mov	sp, r7
+ 80006dc:	bd80      	pop	{r7, pc}
+ 80006de:	bf00      	nop
  80006e0:	40021000 	.word	0x40021000
  80006e4:	48000800 	.word	0x48000800
 
