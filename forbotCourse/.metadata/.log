@@ -2082,3 +2082,6 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-04-13 00:08:44.531
 !MESSAGE Indexed 'project8_basicTim' (25 sources, 82 headers) in 6.08 sec: 5,451 declarations; 29,340 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0057%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-13 00:19:45.930
+!MESSAGE Indexed 'project8_generalPTim' (25 sources, 82 headers) in 3.65 sec: 5,451 declarations; 29,340 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0057%)
