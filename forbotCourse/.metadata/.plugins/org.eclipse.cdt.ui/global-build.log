@@ -1,21 +1,21 @@
-15:56:58 **** Incremental Build of configuration Debug for project project6_lowEnergyStates ****
+19:13:22 **** Incremental Build of configuration Debug for project project7_interrupts ****
 make -j4 all 
-arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-g++ -o "project6_lowEnergyStates.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\User\Desktop\stm32\stm32\forbotCourse\project6_lowEnergyStates\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project6_lowEnergyStates.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: project6_lowEnergyStates.elf
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l4xx_it.d" -MT"Core/Src/stm32l4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_it.o"
+arm-none-eabi-gcc -o "project7_interrupts.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\User\Desktop\stm32\stm32\forbotCourse\project7_interrupts\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project7_interrupts.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: project7_interrupts.elf
  
-arm-none-eabi-size  project6_lowEnergyStates.elf 
-arm-none-eabi-objdump -h -S project6_lowEnergyStates.elf  > "project6_lowEnergyStates.list"
+arm-none-eabi-size  project7_interrupts.elf 
+arm-none-eabi-objdump -h -S project7_interrupts.elf  > "project7_interrupts.list"
    text	   data	    bss	    dec	    hex	filename
-  10176	     20	   1604	  11800	   2e18	project6_lowEnergyStates.elf
+  21472	    152	   2136	  23760	   5cd0	project7_interrupts.elf
 Finished building: default.size.stdout
  
-Finished building: project6_lowEnergyStates.list
+Finished building: project7_interrupts.list
  
-15:57:03 **** Incremental Build of configuration Debug for project project6_lowEnergyStates ****
+19:13:26 **** Incremental Build of configuration Debug for project project7_interrupts ****
 make -j4 all 
-arm-none-eabi-size  project6_lowEnergyStates.elf 
+arm-none-eabi-size  project7_interrupts.elf 
    text	   data	    bss	    dec	    hex	filename
-  10176	     20	   1604	  11800	   2e18	project6_lowEnergyStates.elf
+  21472	    152	   2136	  23760	   5cd0	project7_interrupts.elf
 Finished building: default.size.stdout
  
