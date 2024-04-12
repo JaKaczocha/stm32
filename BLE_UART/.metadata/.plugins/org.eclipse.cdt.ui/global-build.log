@@ -1,0 +1,14 @@
+22:13:34 **** Incremental Build of configuration Debug for project BLE_UART1 ****
+make -j4 all 
+arm-none-eabi-size  BLE_UART1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14844	     20	   1708	  16572	   40bc	BLE_UART1.elf
+Finished building: default.size.stdout
+ 
+22:13:37 **** Incremental Build of configuration Debug for project BLE_UART1 ****
+make -j4 all 
+arm-none-eabi-size  BLE_UART1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14844	     20	   1708	  16572	   40bc	BLE_UART1.elf
+Finished building: default.size.stdout
+ 
