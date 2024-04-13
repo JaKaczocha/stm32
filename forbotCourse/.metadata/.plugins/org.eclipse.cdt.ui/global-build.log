@@ -1,21 +1,70 @@
-01:24:04 **** Incremental Build of configuration Debug for project project8_generalPTim ****
+14:41:54 **** Incremental Build of configuration Debug for project project8task ****
 make -j4 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "project8_generalPTim.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\User\Desktop\stm32\stm32\forbotCourse\project8_generalPTim\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project8_generalPTim.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: project8_generalPTim.elf
+arm-none-eabi-gcc -o "project8task.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\User\Desktop\stm32\stm32\forbotCourse\project8task\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project8task.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: project8task.elf
  
-arm-none-eabi-size  project8_generalPTim.elf 
-arm-none-eabi-objdump -h -S project8_generalPTim.elf  > "project8_generalPTim.list"
+arm-none-eabi-size  project8task.elf 
+arm-none-eabi-objdump -h -S project8task.elf  > "project8task.list"
    text	   data	    bss	    dec	    hex	filename
-  27064	    100	   2092	  29256	   7248	project8_generalPTim.elf
+  19000	     20	   1932	  20952	   51d8	project8task.elf
 Finished building: default.size.stdout
  
-Finished building: project8_generalPTim.list
+Finished building: project8task.list
  
-01:24:21 **** Incremental Build of configuration Debug for project project8_generalPTim ****
+14:42:01 **** Incremental Build of configuration Debug for project project8task ****
 make -j4 all 
-arm-none-eabi-size  project8_generalPTim.elf 
+arm-none-eabi-size  project8task.elf 
    text	   data	    bss	    dec	    hex	filename
-  27064	    100	   2092	  29256	   7248	project8_generalPTim.elf
+  19000	     20	   1932	  20952	   51d8	project8task.elf
 Finished building: default.size.stdout
+ 
+14:43:06 **** Incremental Build of configuration Debug for project project8task ****
+make -j4 all 
+arm-none-eabi-size  project8task.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19000	     20	   1932	  20952	   51d8	project8task.elf
+Finished building: default.size.stdout
+ 
+14:43:11 **** Incremental Build of configuration Debug for project project8task ****
+make -j4 all 
+arm-none-eabi-size  project8task.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19000	     20	   1932	  20952	   51d8	project8task.elf
+Finished building: default.size.stdout
+ 
+14:43:17 **** Incremental Build of configuration Debug for project project8task ****
+make -j4 all 
+arm-none-eabi-size  project8task.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19000	     20	   1932	  20952	   51d8	project8task.elf
+Finished building: default.size.stdout
+ 
+14:43:21 **** Incremental Build of configuration Debug for project project8task ****
+make -j4 all 
+arm-none-eabi-size  project8task.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19000	     20	   1932	  20952	   51d8	project8task.elf
+Finished building: default.size.stdout
+ 
+14:43:33 **** Incremental Build of configuration Debug for project project8task ****
+make -j4 all 
+arm-none-eabi-size  project8task.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19000	     20	   1932	  20952	   51d8	project8task.elf
+Finished building: default.size.stdout
+ 
+14:44:06 **** Incremental Build of configuration Debug for project project8task ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "project8task.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\User\Desktop\stm32\stm32\forbotCourse\project8task\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project8task.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: project8task.elf
+ 
+arm-none-eabi-size  project8task.elf 
+arm-none-eabi-objdump -h -S project8task.elf  > "project8task.list"
+   text	   data	    bss	    dec	    hex	filename
+  19004	     20	   1932	  20956	   51dc	project8task.elf
+Finished building: default.size.stdout
+ 
+Finished building: project8task.list
  
