@@ -1,7 +1,7 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:project8enc Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:project8task Debug
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:project8enc Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:project8task Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:project9vrefint Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:project9potentiometer Debug
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:project1\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:project1\ Debug/activeLaunchTarget=null\:---
@@ -15,4 +15,5 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:project5\ Debug/activeLaunchTar
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:project7_interrupts\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:project7_irq\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:project8enc\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:project8enc\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:project8task\ Debug/activeLaunchMode=run

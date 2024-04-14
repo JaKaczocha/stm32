@@ -1,0 +1,16 @@
+22:08:46 **** Incremental Build of configuration Debug for project project9vrefint ****
+make -j4 all 
+arm-none-eabi-gcc -o "project9vrefint.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\User\Desktop\stm32\stm32\forbotCourse\project9vrefint\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project9vrefint.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: project9vrefint.elf
+ 
+arm-none-eabi-size  project9vrefint.elf 
+arm-none-eabi-objdump -h -S project9vrefint.elf  > "project9vrefint.list"
+   text	   data	    bss	    dec	    hex	filename
+  32736	    476	   2140	  35352	   8a18	project9vrefint.elf
+Finished building: default.size.stdout
+ 
+Finished building: project9vrefint.list
+ 
+
+22:08:48 Build Finished. 0 errors, 0 warnings. (took 2s.423ms)
+
