@@ -1,0 +1,10 @@
+15:57:50 **** Incremental Build of configuration Debug for project project12eepromI2C ****
+make -j4 all 
+arm-none-eabi-size  project12eepromI2C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20468	    112	   2128	  22708	   58b4	project12eepromI2C.elf
+Finished building: default.size.stdout
+ 
+
+15:57:50 Build Finished. 0 errors, 0 warnings. (took 428ms)
+
