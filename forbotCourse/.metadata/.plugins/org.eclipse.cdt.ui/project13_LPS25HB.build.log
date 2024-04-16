@@ -1,0 +1,10 @@
+21:18:37 **** Incremental Build of configuration Debug for project project13_LPS25HB ****
+make -j4 all 
+arm-none-eabi-size  project13_LPS25HB.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32616	    476	   2124	  35216	   8990	project13_LPS25HB.elf
+Finished building: default.size.stdout
+ 
+
+21:18:38 Build Finished. 0 errors, 0 warnings. (took 427ms)
+

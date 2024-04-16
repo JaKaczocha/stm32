@@ -1,21 +1,34 @@
-15:57:46 **** Incremental Build of configuration Debug for project project12eepromI2C ****
+21:18:34 **** Incremental Build of configuration Debug for project project13_LPS25HB ****
 make -j4 all 
+arm-none-eabi-gcc "../Core/Src/lps25hb.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/lps25hb.d" -MT"Core/Src/lps25hb.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/lps25hb.o"
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "project12eepromI2C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\User\Desktop\stm32\stm32\forbotCourse\project12eepromI2C\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project12eepromI2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: project12eepromI2C.elf
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:126:35: warning: implicit declaration of function 'log' [-Wimplicit-function-declaration]
+  126 |     float h = -29.271769 * temp * log(p / p0);
+      |                                   ^~~
+../Core/Src/main.c:29:1: note: include '<math.h>' or provide a declaration of 'log'
+   28 | #include "lps25hb.h"
+  +++ |+#include <math.h>
+   29 | /* USER CODE END Includes */
+../Core/Src/main.c:126:35: warning: incompatible implicit declaration of built-in function 'log' [-Wbuiltin-declaration-mismatch]
+  126 |     float h = -29.271769 * temp * log(p / p0);
+      |                                   ^~~
+../Core/Src/main.c:126:35: note: include '<math.h>' or provide a declaration of 'log'
+arm-none-eabi-gcc -o "project13_LPS25HB.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\User\Desktop\stm32\stm32\forbotCourse\project13_LPS25HB\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project13_LPS25HB.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: project13_LPS25HB.elf
  
-arm-none-eabi-size  project12eepromI2C.elf 
-arm-none-eabi-objdump -h -S project12eepromI2C.elf  > "project12eepromI2C.list"
+arm-none-eabi-size  project13_LPS25HB.elf 
+arm-none-eabi-objdump -h -S project13_LPS25HB.elf  > "project13_LPS25HB.list"
    text	   data	    bss	    dec	    hex	filename
-  20468	    112	   2128	  22708	   58b4	project12eepromI2C.elf
+  32616	    476	   2124	  35216	   8990	project13_LPS25HB.elf
 Finished building: default.size.stdout
  
-Finished building: project12eepromI2C.list
+Finished building: project13_LPS25HB.list
  
-15:57:50 **** Incremental Build of configuration Debug for project project12eepromI2C ****
+21:18:37 **** Incremental Build of configuration Debug for project project13_LPS25HB ****
 make -j4 all 
-arm-none-eabi-size  project12eepromI2C.elf 
+arm-none-eabi-size  project13_LPS25HB.elf 
    text	   data	    bss	    dec	    hex	filename
-  20468	    112	   2128	  22708	   58b4	project12eepromI2C.elf
+  32616	    476	   2124	  35216	   8990	project13_LPS25HB.elf
 Finished building: default.size.stdout
  
